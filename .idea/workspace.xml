@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c42ac0cd-99d0-45ed-826a-e917e2bac066" name="Changes" comment="..." />
+    <list default="true" id="c42ac0cd-99d0-45ed-826a-e917e2bac066" name="Changes" comment="...">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/3eb99d125ba286d8c802641988673724.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springsecurityapplication/config/UploadsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springsecurityapplication/config/UploadsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products/add.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +29,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -56,6 +64,9 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
@@ -112,7 +123,10 @@
       <workItem from="1683549293871" duration="3510000" />
       <workItem from="1683552864246" duration="42000" />
       <workItem from="1683553057489" duration="2003000" />
-      <workItem from="1683557743620" duration="23000" />
+      <workItem from="1683557743620" duration="4953000" />
+      <workItem from="1683568156825" duration="575000" />
+      <workItem from="1683568908899" duration="1592000" />
+      <workItem from="1683570627607" duration="3140000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена авторизация, регистрация, аутентификация с помощью Spring Security">
       <created>1679923336718</created>

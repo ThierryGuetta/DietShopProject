@@ -16,12 +16,12 @@
 	<form enctype="multipart/form-data" name="product_add_form" th:action="@{/products/add}" th:method="POST"
 	      th:object="${product}">
 		<label for="image">
-			<input accept="image/png, image/jpeg" id="image" name="image" style="display: none;" th:field="*{multipartFile}"
+			<input accept="image/png, image/jpeg, image/jpg" id="image" name="image" style="display: none;" th:field="*{multipartFile}"
 			       type="file">
 			<img th:src="@{'/static_images/empty_product.jpg'}">
 		</label>
 
-		<label for="title">Назавание товара:</label>
+		<label for="title">Название товара:</label>
 		<input id="title" name="title" th:field="*{title}" type="text">
 		<span style="color: red" th:errors="*{title}"
 		      th:if="@{#fields.hasErrors('title')}">Ошибки в названии товара.</span>
