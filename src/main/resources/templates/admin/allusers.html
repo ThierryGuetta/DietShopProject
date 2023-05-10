@@ -1,0 +1,41 @@
+<html layout:decorate="~{layouts/layout}" xmlns:layout="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Все пользователи</title>
+    <link href="../../static/css/orders.css" media="all" rel="stylesheet" th:href="@{/css/orders.css}" type="text/css">
+</head>
+
+<body>
+
+<div layout:fragment="content">
+    <h1>Все пользователи</h1>
+
+    <div class="orders">
+        <ul>
+            <li th:each="user : ${users}">
+                <p><a th:href="@{/users/{id}(id=${user.getUsername()})}" th:text="${user.getUsername()}"></a>
+                <p th:text="${user.getRole()}"></p>
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script layout:fragment="script">
+    var myForm = document.getElementById('search_form');
+
+    myForm.addEventListener('submit', function (e) {
+        var allInputs = myForm.getElementsByTagName('input');
+
+        for (var i = 0; i < allInputs.length; i++) {
+            var input = allInputs[i];
+
+            if (input.name && !input.value) {
+                input.removeAttribute('name');
+            }
+        }
+    });
+
+</script>
+</body>
+</html>

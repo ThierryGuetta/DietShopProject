@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42ac0cd-99d0-45ed-826a-e917e2bac066" name="Changes" comment="...">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allusers.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/skan.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springsecurityapplication/controllers/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springsecurityapplication/controllers/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springsecurityapplication/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springsecurityapplication/controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springsecurityapplication/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springsecurityapplication/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/images/1.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +61,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -123,6 +130,7 @@
       <workItem from="1683568908899" duration="1592000" />
       <workItem from="1683570627607" duration="3167000" />
       <workItem from="1683602947395" duration="1050000" />
+      <workItem from="1683713986394" duration="6633000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена авторизация, регистрация, аутентификация с помощью Spring Security">
       <created>1679923336718</created>
@@ -145,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683574076698</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="...">
+      <created>1683714006294</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1683714006294</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,6 +1,7 @@
 package com.example.springsecurityapplication.controllers;
 
 import com.example.springsecurityapplication.services.OrderService;
+import com.example.springsecurityapplication.services.UserService;
 import org.jetbrains.annotations.NotNull;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,9 +11,11 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(value = "/admin")
 public class AdminController {
     private final OrderService orderService;
+    private final UserService userService;
 
-    public AdminController(OrderService orderService) {
+    public AdminController(OrderService orderService, UserService userService) {
         this.orderService = orderService;
+        this.userService = userService;
     }
 
     @GetMapping(value = "/orders")
@@ -27,6 +30,17 @@ public class AdminController {
         model.addAttribute("order", orderService.findById(id));
 
         return "admin/order";
+    }
+
+    @GetMapping(value = "/lk")
+    public String lk() {
+        return "index/index";
+    }
+
+    @GetMapping(value = "/allusers")
+    public String allusers(Model model) {
+        model.addAttribute("users", userService.getAllUsers());
+        return "admin/allusers";
     }
 
     @PatchMapping(value = "/orders/{id}")
