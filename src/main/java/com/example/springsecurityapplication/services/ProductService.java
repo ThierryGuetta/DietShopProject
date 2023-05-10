@@ -144,6 +144,7 @@ public class ProductService {
         } else {
             productEntity.setTitle(productDTIO.getTitle());
             productEntity.setPrice(productDTIO.getPrice());
+            productEntity.setDescr(productDTIO.getDescr());
             productRepository.save(productEntity);
         }
     }

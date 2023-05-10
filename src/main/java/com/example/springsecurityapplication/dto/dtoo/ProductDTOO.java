@@ -7,16 +7,18 @@ public class ProductDTOO {
     private String fileName;
     private String title;
     private BigDecimal price;
+    private String descr;
 
     public ProductDTOO() {
 
     }
 
-    public ProductDTOO(int id, String fileName, String title, BigDecimal price) {
+    public ProductDTOO(int id, String fileName, String title, BigDecimal price, String descr) {
         this.id = id;
         this.fileName = fileName;
         this.title = title;
         this.price = price;
+        this.descr = descr;
     }
 
     public int getId() {
@@ -49,5 +51,13 @@ public class ProductDTOO {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    public String getDescr() {
+        return descr;
+    }
+
+    public void setDescr(String descr) {
+        this.descr = descr;
     }
 }

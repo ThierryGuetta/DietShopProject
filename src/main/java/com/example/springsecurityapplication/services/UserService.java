@@ -25,6 +25,8 @@ public class UserService {
     public void save(@NotNull UserEntity userEntity) {
         userEntity.setPassword(passwordEncoder.encode(userEntity.getPassword()));
         userEntity.setRole("ROLE_USER");
+        userEntity.setFirstName(userEntity.getFirstName());
+        userEntity.setSecondName(userEntity.getSecondName());
 
         userRepository.save(userEntity);
     }

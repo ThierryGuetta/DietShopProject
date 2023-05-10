@@ -17,14 +17,17 @@ public class ProductDTIO {
     @Positive(message = "Цена должна быть положительным числом.")
     private BigDecimal price;
 
+    private String descr;
+
     public ProductDTIO() {
 
     }
 
-    public ProductDTIO(MultipartFile multipartFile, String title, BigDecimal price) {
+    public ProductDTIO(MultipartFile multipartFile, String title, BigDecimal price, String descr) {
         this.multipartFile = multipartFile;
         this.title = title;
         this.price = price;
+        this.descr = descr;
     }
 
     public static @NotNull ProductEntity convertToProductEntity(@NotNull ProductDTIO productDTIO) {
@@ -36,7 +39,8 @@ public class ProductDTIO {
                 productDTIO.multipartFile.getContentType(),
                 productDTIO.multipartFile.getSize(),
                 productDTIO.title,
-                productDTIO.price
+                productDTIO.price,
+                productDTIO.descr
         );
     }
 
@@ -50,7 +54,8 @@ public class ProductDTIO {
                 productDTIO.multipartFile.getContentType(),
                 productDTIO.multipartFile.getSize(),
                 productDTIO.title,
-                productDTIO.price
+                productDTIO.price,
+                productDTIO.descr
         );
     }
 
@@ -76,5 +81,13 @@ public class ProductDTIO {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    public String getDescr() {
+        return descr;
+    }
+
+    public void setDescr(String descr) {
+        this.descr = descr;
     }
 }

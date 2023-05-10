@@ -30,6 +30,9 @@
 		<input id="price" name="price" th:field="*{price}" type="text">
 		<span style="color: red" th:errors="*{price}" th:if="@{#fields.hasErrors('price')}">Ошибки в цене.</span>
 
+		<label for="descr">Описание:</label>
+		<textarea id="descr" name="descr" th:field="*{descr}"></textarea>
+
 		<input type="submit" value="Добавить">
 	</form>
 </div>

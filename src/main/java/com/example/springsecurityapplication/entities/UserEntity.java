@@ -17,6 +17,10 @@ public class UserEntity {
     private String password;
     @Column(name = "role")
     private String role;
+    @Column(name = "firstName")
+    private String firstName;
+    @Column(name = "secondName")
+    private String secondName;
     @OneToMany(mappedBy = "userEntity")
     private List<CartEntity> cartEntities;
     @OneToMany(mappedBy = "userEntity")
@@ -30,9 +34,11 @@ public class UserEntity {
         this.id = id;
     }
 
-    public UserEntity(String username, String password) {
+    public UserEntity(String username, String password, String firstName, String secondName) {
         this.username = username;
         this.password = password;
+        this.firstName = firstName;
+        this.secondName = secondName;
     }
 
     public int getId() {
@@ -65,5 +71,21 @@ public class UserEntity {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getSecondName() {
+        return secondName;
+    }
+
+    public void setSecondName(String secondName) {
+        this.secondName = secondName;
     }
 }

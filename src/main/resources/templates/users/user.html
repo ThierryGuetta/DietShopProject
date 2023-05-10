@@ -14,8 +14,10 @@
 	<h1>Информация о пользователе</h1>
 
 	<form class="admin_user" th:action="@{/users/{id}(id=${user.id})}" th:method="PATCH">
-		<p th:text="'Идентификатор: ' + ${user.id}"></p>
-		<p th:text="'Имя пользователя: ' + ${user.username}"></p>
+		<p th:text="'ID: ' + ${user.id}"></p>
+		<p th:text="'Логин: ' + ${user.username}"></p>
+		<p th:text="'Имя пользователя: ' + ${user.getFirstName()}"></p>
+		<p th:text="'Фамилия пользователя: ' + ${user.getSecondName()}"></p>
 		<div>
 			<p>Роль:</p>
 			<select id="role" name="role">

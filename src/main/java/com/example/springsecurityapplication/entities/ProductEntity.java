@@ -27,6 +27,9 @@ public class ProductEntity {
     private String title;
     @Column(name = "price")
     private BigDecimal price;
+    @Column(name = "descr")
+    private String descr;
+
     @OneToMany(mappedBy = "productEntity")
     private List<CartEntity> cartEntities;
     @OneToMany(mappedBy = "productEntity")
@@ -35,16 +38,17 @@ public class ProductEntity {
     public ProductEntity() {
     }
 
-    public ProductEntity(String fileName, String filePath, String fileType, long fileSize, String title, BigDecimal price) {
+    public ProductEntity(String fileName, String filePath, String fileType, long fileSize, String title, BigDecimal price, String descr) {
         this.fileName = fileName;
         this.filePath = filePath;
         this.fileType = fileType;
         this.fileSize = fileSize;
         this.title = title;
         this.price = price;
+        this.descr = descr;
     }
 
-    public ProductEntity(int id, String fileName, String filePath, String fileType, long fileSize, String title, BigDecimal price) {
+    public ProductEntity(int id, String fileName, String filePath, String fileType, long fileSize, String title, BigDecimal price, String descr) {
         this.id = id;
         this.fileName = fileName;
         this.filePath = filePath;
@@ -52,11 +56,12 @@ public class ProductEntity {
         this.fileSize = fileSize;
         this.title = title;
         this.price = price;
+        this.descr = descr;
     }
 
     @Contract(value = "_ -> new", pure = true)
     public static @NotNull ProductDTOO convertToProductDTOO(@NotNull ProductEntity productEntity) {
-        return new ProductDTOO(productEntity.id, productEntity.fileName, productEntity.title, productEntity.price);
+        return new ProductDTOO(productEntity.id, productEntity.fileName, productEntity.title, productEntity.price, productEntity.descr);
     }
 
     public int getId() {
@@ -113,5 +118,13 @@ public class ProductEntity {
 
     public void setPrice(BigDecimal price) {
         this.price = price;
+    }
+
+    public String getDescr() {
+        return descr;
+    }
+
+    public void setDescr(String descr) {
+        this.descr = descr;
     }
 }

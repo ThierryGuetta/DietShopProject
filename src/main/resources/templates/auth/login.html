@@ -20,7 +20,7 @@
 	<form class="auth" name="login_form" th:action="@{/login}" th:method="POST">
 		<input th:name="${_csrf.parameterName}" th:value="${_csrf.token}" type="hidden">
 
-		<label for="username">Имя пользователя:</label>
+		<label for="username">Логин:</label>
 		<input id="username" name="username" type="text">
 
 		<label for="password">Пароль:</label>
