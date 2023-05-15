@@ -19,9 +19,11 @@ public class AdminController {
     }
 
     @GetMapping(value = "/orders")
-    public String orders(@RequestParam(value = "search", required = false) Integer search, @NotNull Model model) {
+    public String orders(@RequestParam(value = "search", required = false) String search, @NotNull Model model) {
         if (search == null) {
-            model.addAttribute("orders", orderService.findAll(search));
+            model.addAttribute("orders", orderService.findAll(null));
+        } else if (search.length() != 4) {
+            model.addAttribute("orders", null);
         } else {
             model.addAttribute("orders", orderService.findByIdEndingWith(search));
         }

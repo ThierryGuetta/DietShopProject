@@ -3,9 +3,9 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.31">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>1387</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1511</IntrospectionStateNumber>
       <ServerVersion>15.1</ServerVersion>
-      <StartupTime>1683126701</StartupTime>
+      <StartupTime>1683923694</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -800,7 +800,7 @@ false Zulu
 13183||10|C|G
 13183||-9223372036854775808|U|G
 13183||10|U|G</Grants>
-      <IntrospectionStateNumber>1388</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1512</IntrospectionStateNumber>
       <ObjectId>25640</ObjectId>
       <Relations>sequence|table|25644|25641|1
 sequence|table|25649|25645|1
@@ -4227,7 +4227,7 @@ sequence|table|25662|25659|1
     <schema id="264" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>1388</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1512</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>518</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -4241,7 +4241,7 @@ sequence|table|25662|25659|1
     <sequence id="266" parent="264" name="order_id_seq">
       <DataType>integer|0s</DataType>
       <ObjectId>25649</ObjectId>
-      <StateNumber>1280</StateNumber>
+      <StateNumber>1502</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
     <sequence id="267" parent="264" name="product_id_seq">
@@ -4429,11 +4429,11 @@ sequence|table|25662|25659|1
     <foreign-key id="290" parent="271" name="orders_products_order_id_fkey">
       <ColNames>order_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>25694</ObjectId>
+      <ObjectId>33850</ObjectId>
       <RefColNames>id</RefColNames>
       <RefColPositions>1</RefColPositions>
       <RefKeyName>order_pkey</RefKeyName>
-      <StateNumber>1280</StateNumber>
+      <StateNumber>1467</StateNumber>
       <RefTableId>25645</RefTableId>
       <RefTableName>order</RefTableName>
       <RefTableKind>table</RefTableKind>
@@ -4450,28 +4450,47 @@ sequence|table|25662|25659|1
       <RefTableName>product</RefTableName>
       <RefTableKind>table</RefTableKind>
     </foreign-key>
-    <index id="292" parent="271" name="orders_products_pkey">
+    <index id="292" parent="271" name="orders_products_order_id_product_id_key">
       <ClassIds>1978,1978</ClassIds>
       <ColNames>order_id
 product_id</ColNames>
       <CollationIds>0,0</CollationIds>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>25667</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>1280</StateNumber>
+      <ObjectId>33831</ObjectId>
+      <StateNumber>1426</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="293" parent="271" name="orders_products_pkey">
+    <index id="293" parent="271" name="orders_products_pkey">
+      <ClassIds>1978,1978</ClassIds>
+      <ColNames>order_id
+product_id</ColNames>
+      <CollationIds>0,0</CollationIds>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>33833</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>1435</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="294" parent="271" name="orders_products_pkey">
       <ColNames>order_id
 product_id</ColNames>
       <NameSurrogate>1</NameSurrogate>
-      <ObjectId>25668</ObjectId>
+      <ObjectId>33834</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>1280</StateNumber>
-      <UnderlyingIndexId>25667</UnderlyingIndexId>
+      <StateNumber>1435</StateNumber>
+      <UnderlyingIndexId>33833</UnderlyingIndexId>
     </key>
-    <column id="294" parent="272" name="id">
+    <key id="295" parent="271" name="orders_products_order_id_product_id_key">
+      <ColNames>order_id
+product_id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>33832</ObjectId>
+      <StateNumber>1426</StateNumber>
+      <UnderlyingIndexId>33831</UnderlyingIndexId>
+    </key>
+    <column id="296" parent="272" name="id">
       <DataType>integer|0s</DataType>
       <IdentityKind>by-default</IdentityKind>
       <NotNull>1</NotNull>
@@ -4479,55 +4498,55 @@ product_id</ColNames>
       <StateNumber>1280</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="295" parent="272" name="file_name">
+    <column id="297" parent="272" name="file_name">
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>1280</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="296" parent="272" name="file_path">
+    <column id="298" parent="272" name="file_path">
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>1280</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="297" parent="272" name="file_type">
+    <column id="299" parent="272" name="file_type">
       <DataType>varchar(32)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>1280</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="298" parent="272" name="file_size">
+    <column id="300" parent="272" name="file_size">
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>1280</StateNumber>
       <TypeId>20</TypeId>
     </column>
-    <column id="299" parent="272" name="title">
+    <column id="301" parent="272" name="title">
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StateNumber>1280</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="300" parent="272" name="price">
+    <column id="302" parent="272" name="price">
       <DataType>numeric(10,2 digit)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>7</Position>
       <StateNumber>1280</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="301" parent="272" name="descr">
+    <column id="303" parent="272" name="descr">
       <DataType>varchar(1000)|0s</DataType>
       <Position>8</Position>
       <StateNumber>1366</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="302" parent="272" name="product_pkey">
+    <index id="304" parent="272" name="product_pkey">
       <ClassIds>1978</ClassIds>
       <ColNames>id</ColNames>
       <CollationIds>0</CollationIds>
@@ -4538,7 +4557,7 @@ product_id</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="303" parent="272" name="product_file_name_key">
+    <index id="305" parent="272" name="product_file_name_key">
       <ClassIds>3126</ClassIds>
       <ColNames>file_name</ColNames>
       <CollationIds>100</CollationIds>
@@ -4549,7 +4568,7 @@ product_id</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="304" parent="272" name="product_file_path_key">
+    <index id="306" parent="272" name="product_file_path_key">
       <ClassIds>3126</ClassIds>
       <ColNames>file_path</ColNames>
       <CollationIds>100</CollationIds>
@@ -4560,7 +4579,7 @@ product_id</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="305" parent="272" name="product_pkey">
+    <key id="307" parent="272" name="product_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>25674</ObjectId>
@@ -4568,21 +4587,21 @@ product_id</ColNames>
       <StateNumber>1280</StateNumber>
       <UnderlyingIndexId>25673</UnderlyingIndexId>
     </key>
-    <key id="306" parent="272" name="product_file_name_key">
+    <key id="308" parent="272" name="product_file_name_key">
       <ColNames>file_name</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>25670</ObjectId>
       <StateNumber>1280</StateNumber>
       <UnderlyingIndexId>25669</UnderlyingIndexId>
     </key>
-    <key id="307" parent="272" name="product_file_path_key">
+    <key id="309" parent="272" name="product_file_path_key">
       <ColNames>file_path</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>25672</ObjectId>
       <StateNumber>1280</StateNumber>
       <UnderlyingIndexId>25671</UnderlyingIndexId>
     </key>
-    <column id="308" parent="273" name="id">
+    <column id="310" parent="273" name="id">
       <DataType>integer|0s</DataType>
       <IdentityKind>by-default</IdentityKind>
       <NotNull>1</NotNull>
@@ -4590,40 +4609,40 @@ product_id</ColNames>
       <StateNumber>1280</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="309" parent="273" name="username">
+    <column id="311" parent="273" name="username">
       <DataType>varchar(256)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>1280</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="310" parent="273" name="password">
+    <column id="312" parent="273" name="password">
       <DataType>varchar(60)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>1280</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="311" parent="273" name="role">
+    <column id="313" parent="273" name="role">
       <DataType>varchar(10)|0s</DataType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>1280</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="312" parent="273" name="first_name">
+    <column id="314" parent="273" name="first_name">
       <DataType>varchar(20)|0s</DataType>
       <Position>5</Position>
       <StateNumber>1341</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="313" parent="273" name="second_name">
+    <column id="315" parent="273" name="second_name">
       <DataType>varchar(20)|0s</DataType>
       <Position>6</Position>
       <StateNumber>1345</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="314" parent="273" name="user_pkey">
+    <index id="316" parent="273" name="user_pkey">
       <ClassIds>1978</ClassIds>
       <ColNames>id</ColNames>
       <CollationIds>0</CollationIds>
@@ -4634,7 +4653,7 @@ product_id</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="315" parent="273" name="user_username_key">
+    <index id="317" parent="273" name="user_username_key">
       <ClassIds>3126</ClassIds>
       <ColNames>username</ColNames>
       <CollationIds>100</CollationIds>
@@ -4645,7 +4664,7 @@ product_id</ColNames>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="316" parent="273" name="user_pkey">
+    <key id="318" parent="273" name="user_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>25676</ObjectId>
@@ -4653,7 +4672,7 @@ product_id</ColNames>
       <StateNumber>1280</StateNumber>
       <UnderlyingIndexId>25675</UnderlyingIndexId>
     </key>
-    <key id="317" parent="273" name="user_username_key">
+    <key id="319" parent="273" name="user_username_key">
       <ColNames>username</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>25678</ObjectId>

@@ -68,12 +68,11 @@ public class OrderService {
         return orderRepository.findById(id).orElse(null);
     }
 
-    public OrderEntity findByIdEndingWith(int id) {
-        String idStr = id + "";
+    public OrderEntity findByIdEndingWith(String id) {
         List<OrderEntity> allOrders = orderRepository.findAll();
         for (OrderEntity order : allOrders) {
             String orderId = order.getId() + "";
-            if (orderId.endsWith(idStr)) {
+            if (orderId.endsWith(id)) {
                 return order;
             }
         }

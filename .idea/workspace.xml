@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42ac0cd-99d0-45ed-826a-e917e2bac066" name="Changes" comment="...">
-      <change afterPath="$PROJECT_DIR$/uploads/images/skan1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/images/scale_1200.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be100571-fb58-4a29-9bc9-b5e0e8f9c480.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/be100571-fb58-4a29-9bc9-b5e0e8f9c480.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be100571-fb58-4a29-9bc9-b5e0e8f9c480/storage_v2/_src_/database/DietShopDB.KAtNOw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/be100571-fb58-4a29-9bc9-b5e0e8f9c480/storage_v2/_src_/database/DietShopDB.KAtNOw/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springsecurityapplication/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springsecurityapplication/controllers/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springsecurityapplication/services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springsecurityapplication/services/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products/products.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uploads/images/1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/images/skan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/images/skan.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +45,7 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
@@ -131,6 +140,12 @@
       <workItem from="1683743906213" duration="434000" />
       <workItem from="1683744360746" duration="4552000" />
       <workItem from="1683749945108" duration="112000" />
+      <workItem from="1683904086695" duration="132000" />
+      <workItem from="1684062772687" duration="4518000" />
+      <workItem from="1684071215766" duration="261000" />
+      <workItem from="1684071634578" duration="241000" />
+      <workItem from="1684138971760" duration="11867000" />
+      <workItem from="1684152013917" duration="4081000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена авторизация, регистрация, аутентификация с помощью Spring Security">
       <created>1679923336718</created>
@@ -174,7 +189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1683750005301</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="...">
+      <created>1683904113543</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1683904113543</updated>
+    </task>
+    <task id="LOCAL-00008" summary="...">
+      <created>1684145178193</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684145178193</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
