@@ -20,7 +20,11 @@ public class AdminController {
 
     @GetMapping(value = "/orders")
     public String orders(@RequestParam(value = "search", required = false) Integer search, @NotNull Model model) {
-        model.addAttribute("orders", orderService.findAll(search));
+        if (search == null) {
+            model.addAttribute("orders", orderService.findAll(search));
+        } else {
+            model.addAttribute("orders", orderService.findByIdEndingWith(search));
+        }
 
         return "admin/orders";
     }
