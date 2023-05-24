@@ -5,14 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c42ac0cd-99d0-45ed-826a-e917e2bac066" name="Changes" comment="...">
+      <change afterPath="$PROJECT_DIR$/uploads/images/logo — копия.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/uploads/images/logo.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/uploads/images/scale_1200.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be100571-fb58-4a29-9bc9-b5e0e8f9c480.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/be100571-fb58-4a29-9bc9-b5e0e8f9c480.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/be100571-fb58-4a29-9bc9-b5e0e8f9c480/storage_v2/_src_/database/DietShopDB.KAtNOw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/be100571-fb58-4a29-9bc9-b5e0e8f9c480/storage_v2/_src_/database/DietShopDB.KAtNOw/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springsecurityapplication/controllers/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springsecurityapplication/controllers/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/springsecurityapplication/services/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/springsecurityapplication/services/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/allusers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allusers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/orders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/auth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/auth/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/auth/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/cart/cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/fragments/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layouts/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layouts/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/orders/orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/orders/orders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products/product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products/products.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uploads/images/1.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/uploads/images/skan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/images/skan.jpg" afterDir="false" />
@@ -82,6 +91,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Андрей\Desktop\Spring\DietShopProject" />
       <recent name="C:\Курсы\Java\Разработка финального проекта. Часть 1\SpringSecurityApplication\src\main\resources\templates\user" />
       <recent name="C:\Курсы\Java\Разработка финального проекта. Часть 1\SpringSecurityApplication\src\main\resources\templates\product" />
     </key>
@@ -145,7 +155,16 @@
       <workItem from="1684071215766" duration="261000" />
       <workItem from="1684071634578" duration="241000" />
       <workItem from="1684138971760" duration="11867000" />
-      <workItem from="1684152013917" duration="4081000" />
+      <workItem from="1684152013917" duration="5486000" />
+      <workItem from="1684161242358" duration="237000" />
+      <workItem from="1684223281398" duration="22000" />
+      <workItem from="1684224229621" duration="3357000" />
+      <workItem from="1684427720497" duration="2773000" />
+      <workItem from="1684436207856" duration="477000" />
+      <workItem from="1684512316433" duration="2410000" />
+      <workItem from="1684661572350" duration="3238000" />
+      <workItem from="1684844267233" duration="1590000" />
+      <workItem from="1684865698152" duration="1135000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена авторизация, регистрация, аутентификация с помощью Spring Security">
       <created>1679923336718</created>
@@ -203,7 +222,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684145178193</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="...">
+      <created>1684157406091</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684157406091</updated>
+    </task>
+    <task id="LOCAL-00010" summary="...">
+      <created>1684161325290</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684161325290</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
