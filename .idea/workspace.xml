@@ -8,6 +8,18 @@
       <change afterPath="$PROJECT_DIR$/uploads/images/logo — копия.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/uploads/images/logo.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/uploads/images/scale_1200.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/allusers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/allusers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/order.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/orders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/auth/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/auth/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/auth/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/auth/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/cart/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/cart/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layouts/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layouts/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/orders/orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/orders/orders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/products/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/products/products.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uploads/images/1.jpeg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/uploads/images/skan.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/images/skan.jpg" afterDir="false" />
     </list>
@@ -76,6 +88,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Андрей\Desktop\Spring\DietShopProject\src\main\resources\static" />
+      <recent name="C:\Users\Андрей\Desktop\Spring\DietShopProject\src\main\resources" />
       <recent name="C:\Users\Андрей\Desktop\Spring\DietShopProject" />
       <recent name="C:\Курсы\Java\Разработка финального проекта. Часть 1\SpringSecurityApplication\src\main\resources\templates\user" />
       <recent name="C:\Курсы\Java\Разработка финального проекта. Часть 1\SpringSecurityApplication\src\main\resources\templates\product" />
@@ -150,7 +164,9 @@
       <workItem from="1684661572350" duration="3238000" />
       <workItem from="1684844267233" duration="1590000" />
       <workItem from="1684865698152" duration="1135000" />
-      <workItem from="1684928675443" duration="344000" />
+      <workItem from="1684928675443" duration="532000" />
+      <workItem from="1684929233698" duration="706000" />
+      <workItem from="1684929962915" duration="602000" />
     </task>
     <task id="LOCAL-00001" summary="Добавлена авторизация, регистрация, аутентификация с помощью Spring Security">
       <created>1679923336718</created>
@@ -229,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684928957556</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="...">
+      <created>1684929098282</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1684929098282</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
